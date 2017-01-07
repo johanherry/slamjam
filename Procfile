@@ -30,3 +30,5 @@ RUN sudo pip install -r requirements.txt
 VOLUME /musicBot/config
 
 CMD python run.py
+
+web: python run.py
