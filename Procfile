@@ -31,4 +31,6 @@ VOLUME /musicBot/config
 
 CMD python run.py
 
-web: python run.py
+WORKER: python run.py
+
+WEB: python run.py
