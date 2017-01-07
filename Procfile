@@ -29,4 +29,4 @@ RUN sudo pip install -r requirements.txt
 #Add volume for configuration
 VOLUME /musicBot/config
 
-CMD python3.5 run.py
+CMD python run.py
