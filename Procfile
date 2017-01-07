@@ -27,9 +27,9 @@ RUN sudo apt-get install wget \
     && sudo python3.5 get-pip.py
 	&& sudo python3.5 run.py
 
-#Add musicbot
-ADD . /musicbot
-WORKDIR /musicbot
+#Add musicBot
+ADD . /musicBot
+WORKDIR /musicBot
 
 #Install PIP dependencies
 RUN sudo pip install -r requirements.txt
@@ -37,8 +37,8 @@ RUN sudo pip3.5 install --upgrade git+https://github.com/Rapptz/discord.py@async
 RUN sudo apt-get install opus-tools
 
 #Add volume for configuration
-VOLUME /musicbot/config
+VOLUME /musicBot/config
 
 CMD python3.5 run.py
 
-WORKER: python run.py
+WORKER: python3.5 run.py
