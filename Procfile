@@ -25,11 +25,12 @@ WORKDIR /musicBot
 
 #Install PIP dependencies
 RUN sudo pip install -r requirements.txt
+RUN sudo pip3.5 install --upgrade git+https://github.com/Rapptz/discord.py@async
 
 #Add volume for configuration
 VOLUME /musicBot/config
 
-CMD python run.py
+CMD python3.5 run.py
 
 WORKER: python run.py
 
